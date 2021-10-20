@@ -10,7 +10,7 @@
         <div class="form-group was-validated">
             <div class="col-md-8 ">
                 <div class="card">
-                    <div class="form-text text-muted" ><b>Prihlffásenie</b></div>
+                    <div class="form-text text-muted" ><b>Prihlásenie</b></div>
                     <div class="card-body">
                         <form action="" method="">
                             <div class="form-group row">
@@ -21,7 +21,7 @@
                             </div>
 
                             <div class="form-group row">
-                                 <small id="emailHelp" class="form-text text-muted mb-2"><b>Heslao</b></small>
+                                 <small id="emailHelp" class="form-text text-muted mb-2"><b>Heslo</b></small>
                                 <div class="col-lg-12">
                                     <input type="password" id="password" class="form-control" name="password" required>
                                 </div>
