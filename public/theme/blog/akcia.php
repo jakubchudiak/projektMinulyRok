@@ -4,7 +4,7 @@
 	{
 		$polozka = trim($polozka);
 		$polozka = htmlspecialchars($polozka);
-		$polozka = stripcslashes($polozka);
+		//$polozka = stripcslashes($polozka);
 		return $polozka;
 	}
 
@@ -16,8 +16,8 @@ if(trim($_POST['odpoved'])== $_POST['spravnaOdpoved'])
 	$suborPrispevky = fopen('prispevky.csv', 'a');
 
 	$novyPrispevok[] = $_GET['pocet'] + 1;
-	$novyPrispevok[] = kontrola($_POST['meno']);
-	$novyPrispevok[] = kontrola($_POST ['sprava']);
+	$novyPrispevok[] = kontrola($_POST['name']);
+	$novyPrispevok[] = kontrola($_POST ['content']);
 	$novyPrispevok[] = date( 'Y-m-d H:i:s',time());
 
 	fputcsv($suborPrispevky, $novyPrispevok, ';');
