@@ -3,7 +3,7 @@ include 'hlavickaAdmin.php';
 //include 'navbarAdmin.php';
 ?>
 
-	<body style="background-color:powderblue;">
+	<body style="background-color:white;">
 
 	<nav class="navbar navbar-expand-lg navbar-light bg-dark">
 	  <a class="navbar-brand text-white" href="#">Admin</a>
@@ -21,7 +21,7 @@ include 'hlavickaAdmin.php';
 
 
 
-	<div class="d-flex flex-column flex-shrink-0 p-3 text-white bg-dark" style="width: 280px;height: 881px;">
+	<div class="d-flex flex-column flex-shrink-0 p-3 text-white bg-grey" style="width: 280px;height: 1000px;">
 	    <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-white text-decoration-none">
 	     <img src="" alt="">
 	    </a>
