@@ -1,6 +1,6 @@
-domov::Domov
-spravy::Správy
-onas::O nás
-galeria::Fotogaléria
-blog::Blog 
-kontakt::Kontakt
+../domov/index::Domov
+../spravy/index::Správy
+../onas/index::O nás
+../galeria/index::Fotogaléria
+../blog/index::Blog
+../kontakt/index::Menu

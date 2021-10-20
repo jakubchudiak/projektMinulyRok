@@ -1,6 +1,6 @@
 <section class="container-fluid bg-dark">
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark container sticky-top">
-    <a class="navbar-brand" href="#">Spojená škola Tvrdošín-Admin</a>
+    <a class="navbar-brand" href="#">Spojená škola Tvrdošín-Administrácia</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -11,7 +11,7 @@
           <?php
               $aktivnaStranka = basename(dirname($_SERVER['SCRIPT_NAME']));
 
-              $menu = [];
+        //      $menu = [];
 
               $riadky = file('../admin/menuAdmin.txt', FILE_IGNORE_NEW_LINES | FILE_SKIP_EMPTY_LINES); 
 
