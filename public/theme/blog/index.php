@@ -15,6 +15,8 @@ $chyba ="";
 $meno = "";
 $sprava = "";
 
+/// odlišujeme prvy krat stranka spustena
+
 if($_SERVER['REQUEST_METHOD'] == 'POST'){
 
 
@@ -83,6 +85,7 @@ if(empty($chyba)){
 
 
 	$suborCaptcha = file('captcha.txt', FILE_IGNORE_NEW_LINES | FILE_SKIP_EMPTY_LINES);
+	//$antiSpam = [];
 
 	for ($i=0; $i < count($suborCaptcha) ; $i+=2){
 
@@ -92,7 +95,9 @@ if(empty($chyba)){
 
 
 	$vybranyKluc = array_rand($antiSpam);
-	
+	//echo $vybranyKluc;
+
+	//$prispevky = [];
 	$suborPrispevky = fopen('prispevky.csv', 'r');
 
 	while($prispevok = fgetcsv($suborPrispevky,1000,';')){
@@ -124,11 +129,11 @@ if(empty($chyba)){
 			
 			<div class="form-group ">
 				 <small id="emailHelp" class="form-text text-muted"><b>Správa</b></small>
-				<textarea name="sprava"  cols="98" rows="5" placeholder="Váš text" class="form-control" required> <?php echo $sprava ?></textarea>
+				<textarea name="sprava"  cols="98" rows="5" placeholder="Váš text" class="form-control" required> <?php echo $sprava ?> </textarea>
 			</div>
 		
 			<div class="form-group">
-					 <small> <b>Antispam:</b> <?php echo $antiSpam[$vybranyKluc]?></small> 
+					 <small> <b>Antispam:</b> <?php echo $antiSpam[$vybranyKluc]  ?> </small> 
 			 <div class="form-group was-validated">
 
 			 	<div class="row" >	
